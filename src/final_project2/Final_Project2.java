@@ -9,8 +9,9 @@ public class Final_Project2 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        Scanner input = new Scanner(new File("Classics.txt"));
+    public static void main(String[] args)throws IOException{
+        File Classics = new File("C:\\Users\\massi\\OneDrive\\Desktop\\Classics.txt");
+        Scanner input = new Scanner(Classics);
         String title; 
         String artist; 
     // ADD LINES FOR TASK #3 HERE 
@@ -21,7 +22,7 @@ public class Final_Project2 {
         title = input.nextLine();
         artist = input.nextLine();
         
-        cd[i] = new Song(artist, title);
+        cd[i] = new Song(title, artist);
         } 
     
     input.close();
