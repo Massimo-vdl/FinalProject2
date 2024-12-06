@@ -14,7 +14,6 @@ public class Final_Project2 {
         Scanner input = new Scanner(Classics);
         String title; 
         String artist; 
-    // ADD LINES FOR TASK #3 HERE 
     // Declare an array of Song objects, called cd, // with a size of 6 
     Song[] cd = new Song[6];
     
@@ -28,7 +27,7 @@ public class Final_Project2 {
     input.close();
     System.out.println("Contents of Classics:"); 
         for(int i = 0; i < cd.length; i++) { 
-        // ADD LINES FOR TASK #3 HERE 
+        //printing the contents of our cd object
             System.out.println(cd[i].toString());
         }    
     }

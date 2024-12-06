@@ -22,7 +22,7 @@ public class Average {
         calcMean();
         selectionSort();
     }
-
+    //method to caclulate the average of the scores
     public void calcMean() {
         int total = 0;
         for (int score : data) {
@@ -30,7 +30,7 @@ public class Average {
         }
         mean = total / data.length;
     }
-
+    //toString method to print out the mean of the scores in decending order
     @Override
     public String toString() {
         String result = "Scores in decending order:\n";
@@ -40,7 +40,7 @@ public class Average {
             result += "Mean: "+mean;
         return result;
     }
-
+    //Sorting the scores from highest to lowest
     public void selectionSort() {
         int max = i;
         for (int i = 0; i < data.length - 1; i++) {
